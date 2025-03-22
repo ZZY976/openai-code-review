@@ -53,7 +53,8 @@ public class OpenAiCodeReview {
         System.out.println("code review：" + log);
 
         // 3. 评审日志写入文件
-        writeLog(token,log);
+        String logUrl = writeLog(token,log);
+        System.out.println("writeLog" + logUrl);
     }
 
     private static String codeReview(String diffCode) throws Exception {
