@@ -15,14 +15,14 @@ import java.nio.charset.StandardCharsets;
 public class ApiTest {
 
     public static void main(String[] args) {
-        String apiKeySecret = "c78fbacd3e10118ad5649d7a54a3a163.UunYDBxpzeClvSKZ";
+        String apiKeySecret = "c9eed2f14fb746ad8c768ca5c946867e.AzCEdFmHQMT4mN7z";
         String token = BearerTokenUtils.getToken(apiKeySecret);
         System.out.println(token);
     }
 
     @Test
     public void test_http() throws IOException {
-        String apiKeySecret = "c78fbacd3e10118ad5649d7a54a3a163.UunYDBxpzeClvSKZ";
+        String apiKeySecret = "c9eed2f14fb746ad8c768ca5c946867e.AzCEdFmHQMT4mN7z";
         String token = BearerTokenUtils.getToken(apiKeySecret);
 
         URL url = new URL("https://open.bigmodel.cn/api/paas/v4/chat/completions");
