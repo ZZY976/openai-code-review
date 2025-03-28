@@ -14,7 +14,7 @@ public class ApiTest {
 
     @Test
     public void test() {
-        System.out.println(Integer.parseInt("tss is pig"));
+        System.out.println(Integer.parseInt("唐思思是猪"));
     }
 
 }
