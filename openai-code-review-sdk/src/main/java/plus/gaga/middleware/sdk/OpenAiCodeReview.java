@@ -8,8 +8,7 @@ import org.slf4j.LoggerFactory;
 import plus.gaga.middleware.sdk.domain.sevice.impl.OpenAiCodeReviewService;
 import plus.gaga.middleware.sdk.infrastructure.git.GitCommand;
 import plus.gaga.middleware.sdk.infrastructure.openai.IOpenAI;
-//import plus.gaga.middleware.sdk.infrastructure.openai.dto.ChatCompletionRequest;
-//import plus.gaga.middleware.sdk.infrastructure.openai.dto.ChatCompletionSyncResponse;
+
 import plus.gaga.middleware.sdk.infrastructure.openai.impl.ChatGLM;
 import plus.gaga.middleware.sdk.infrastructure.weixin.WeiXin;
 import plus.gaga.middleware.sdk.infrastructure.weixin.dto.TemplateMessageDTO;
