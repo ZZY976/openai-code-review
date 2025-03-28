@@ -31,8 +31,8 @@ public class OpenAiCodeReview {
     private static final Logger logger = LoggerFactory.getLogger(OpenAiCodeReview.class);
 
     // 配置配置
-    private String weixin_appid = "wx4005d795fa6b64dd";
-    private String weixin_secret = "5e6884e0da4f84640ab8d5a30164ccf1";
+    private String weixin_appid = "wx5a228ff69e28a91f";
+    private String weixin_secret = "0bea03aa1310bac050aae79dd8703928";
     private String weixin_touser = "o8ge46kIr2anVV_DLczig_6evjKE";
     private String weixin_template_id = "f0jcyjAB8ZMBRmgR4LfdEapkb2ie-jd2nGUEy05-rTg";
 
@@ -50,12 +50,12 @@ public class OpenAiCodeReview {
     private String github_author;
 
     public static void main(String[] args) throws Exception {
-//        System.out.println("测试执行");
-//
-//        String token = System.getenv("GITHUB_TOKEN");
-//        if (null == token || token.isEmpty()) {
-//            throw new RuntimeException("token is null");
-//        }
+        System.out.println("测试执行");
+
+        String token = System.getenv("GITHUB_TOKEN");
+        if (null == token || token.isEmpty()) {
+            throw new RuntimeException("token is null");
+        }
 
 
         GitCommand gitCommand = new GitCommand(
@@ -117,7 +117,7 @@ public class OpenAiCodeReview {
     }
 
     private static String getEnv(String key) {
-        String value = System.getenv("GITHUB_TOKEN");
+        String value = System.getenv(key);
         if (null == value || value.isEmpty()) {
             throw new RuntimeException("value is null");
         }
