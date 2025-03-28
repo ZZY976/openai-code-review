@@ -33,7 +33,7 @@ public class OpenAiCodeReview {
     // 配置配置
     private String weixin_appid = "wx4005d795fa6b64dd";
     private String weixin_secret = "5e6884e0da4f84640ab8d5a30164ccf1";
-    private String weixin_touser = "o8ge46kIr2anVV_DLczig_6evjKE";
+    private String weixin_touser = "o8ge46ohQKQbjPZRgQhZh9sgghk8";
     private String weixin_template_id = "f0jcyjAB8ZMBRmgR4LfdEapkb2ie-jd2nGUEy05-rTg";
 
     // ChatGLM 配置
